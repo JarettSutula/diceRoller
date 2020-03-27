@@ -36,7 +36,7 @@ face5.src = "side6.png"
 <!-- return numbers 0-5 as x, get face(x). try math random?-->
 <script>
 function roll(){
-Math.randomseed(os.time())
+Math.randomseed(15);
 //create a random integer between 0 and 5
 var random = Math.round(Math.random()*5)
 document.images["dice"].src = eval("face" + random + ".src")

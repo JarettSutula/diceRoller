@@ -40,15 +40,7 @@ function roll(){
 var random = Math.round(Math.random()*5)
 document.images["dice"].src = eval("face" + random + ".src")
 //2nd random integer.
-
-//let's make sure they aren't the same number everytime.
-roll2()
-}
-</script>
-
-<script>
-function roll2() {
-  var random2 = Math.round(Math.random()*5)
-  document.images["dice2"].src = eval("face" + random + ".src")
+var random2 = Math.round(Math.random()*5)
+document.images["dice2"].src = eval("face" + random + ".src")
 }
 </script>

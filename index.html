@@ -1,41 +1,11 @@
-<script>
-
-//preload the six images first
-var face0 = new Image()
-face0.src = "side1.png"
-
-var face1 = new Image()
-face1.src = "side2.png"
-
-var face2 = new Image()
-face2.src = "side3.png"
-
-var face3 = new Image()
-face3.src = "side4.png"
-
-var face4 = new Image()
-face4.src = "side5.png"
-
-var face5 = new Image()
-face5.src = "side6.png"
-
-</script>
-
-<!-- the image should start at side 1. and shrink size. -->
-<img src = "side1.png" name = "dice" width = "200" height = "200">
-
-
-<form>
-  <!-- button to change dice. -->
-  <!-- on click, run the function. -->
-  <input type = "button" value = "Roll Dice" onClick = "roll()">
-</form>
-
-
-<!-- return numbers 0-5 as x, get face(x). try math random?-->
-<script>
-function roll(){
-//create a random integer between 0 and 5
-var random = Math.round(Math.random()*5)
-document.images["dice"].src = eval("face" + random + ".src")}
-</script>
+<html>
+  <head>
+    <title>Dice Roller</title>
+  </head>
+  <body>
+    <h1>Choose how many dice are needed.</h1>
+    <form>
+      <input type = "button" value = "One dice" onClick ="window.location.href = oneDice.html">
+    </form>
+  <body>
+</html>

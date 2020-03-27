@@ -37,12 +37,10 @@ face5.src = "side6.png"
 <script>
 function roll(){
 //create a random integer between 0 and 5
-var num1 = Math.random()*5
-var random = Math.round(num1)
+var random = Math.round(Math.random()*5)
 document.images["dice"].src = eval("face" + random + ".src")
 //2nd random integer.
-var num2 = Math.random()*5
-var random2 = Math.round(num2)
-document.images["dice2"].src = eval("face" + random + ".src")
+var random2 = Math.round(Math.random()*5)
+document.images["dice2"].src = eval("face" + random2 + ".src")
 }
 </script>
